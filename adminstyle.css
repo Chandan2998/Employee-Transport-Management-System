@@ -1,0 +1,46 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins',sans-serif;
+    color: rgb(255, 255, 255);
+    background-image: url("car.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .btn-primary {
+    background-color: #6648b1;
+    border: 1px solid #6648b1;
+  }
+  .btn-primary:hover {
+    background-color: #563d7c;
+    border: 1px solid #563d7c;
+  }
+  
+/*---Padding--*/
+.padding{
+    padding-bottom: 2rem;
+  }
+  
+  .welcome {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 2rem;
+    color: white;
+  }
+  
+  .welcome hr {
+    border-top: 2px solid #b4b4b4;
+    width: 95%;
+    margin-top: .3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .lead{
+color: white;
+  }
+  
+  .card{
+      color:black;
+  }

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Admin Login</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="util.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-50">
+				<form name="myform"  class="login100-form validate-form" onsubmit="return validateform()" action="adminpage.html" >
+					<span class="login100-form-title p-b-33">
+						Admin Login
+					</span>
+
+					<div class="wrap-input100 validate-input">
+						<input class="input100" type="text" name="UserName" placeholder="UserName" required>
+						<span class="focus-input100-1"></span>
+						<span class="focus-input100-2"></span>
+					</div>
+					<div class="wrap-input100 rs1 validate-input">
+						<input class="input100" type="password" name="pass" placeholder="Password" required>
+						<span class="focus-input100-1"></span>
+						<span class="focus-input100-2"></span>
+					</div>
+					<div class="container-login100-form-btn m-t-20">
+						<button class="login100-form-btn">
+							Sign in
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+    </div>
+    <script>  
+        function validateform(){  
+        var name=document.myform.UserName.value;  
+        var password=document.myform.pass.value;  
+          
+        if (name=="admin" && password=="admin"){    
+          return true;  
+        }else {  
+          alert("Username or Passwor is incorrect");  
+          return false;  
+          }  
+        }  
+        </script>  
+</body>
+</html>

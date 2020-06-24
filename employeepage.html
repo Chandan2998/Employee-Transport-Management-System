@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Employee Page</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="employeestyle.css">
+</head>
+<body>
+<!--- Welcome Section -->  
+<div class="container-fluid padding">
+	<div class="float-right">
+		<a href="Employeelogin.html"><button class="btn btn-secondary">Signout</button></a>
+	</div>
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h2 class="display-4">Employee Page</h2>
+		</div>
+		<hr>
+	<div class="col-12">
+		<p class="lead">
+			You can manage all you bookings and Timeslots available
+		</p>
+	</div>
+	</div>
+</div>
+	<div>
+	<div class="Driver">
+		<span class="border-bottom">
+	<h2>Select any Time Slot to Book</h2>
+    <p id="first">List of time slots</p>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="userinput1" name="time" class="custom-control-input" value="9 am - Bus-001">
+        <label class="custom-control-label" for="userinput1">9 am - Bus-001</label>
+      </div>
+      <div class="custom-control custom-radio">
+        <input type="radio" id="userinput2" name="time" class="custom-control-input" value="4 pm - Van-004">
+        <label class="custom-control-label" for="userinput2">4 pm - Van-004</label>
+      </div>
+      <div class="custom-control custom-radio">
+        <input type="radio" id="userinput3" name="time" class="custom-control-input" value="9 pm - Bus-003">
+        <label class="custom-control-label" for="userinput3">9 pm - Bus-003</label>
+      </div>
+	<button id="enter" class="btn btn-primary" onclick="myFunction()">Add</button> <br> <br>
+</span>
+</div>
+<div class="slot">
+<p>Selected Slot</p>
+<p id="demo"></p>
+</div>
+<p>
+	<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+	  Available Time Slots
+	</button>
+  </p>
+  <div class="collapse" id="collapseExample">
+	<div class="card card-body">
+		<table class="table">
+			<thead class="thead-dark">
+			  <tr>
+				<th scope="col">#</th>
+				<th scope="col">Vehicle Name</th>
+                <th scope="col">Driver Name</th>
+                <th scope="col">Driver Number</th>
+				<th scope="col">Time</th>
+			  </tr>
+			</thead>
+			<tbody>
+			  <tr>
+				<th scope="row">1</th>
+				<td>Bus-001</td>
+				<td>Sunny</td>
+				<td>987901001</td>
+				<td>9 am</td>
+			  </tr>
+			  <tr>
+				<th scope="row">2</th>
+				<td>Van-003</td>
+				<td>Jacob</td>
+				<td>7680945343</td>
+				<td>4 pm</td>
+			  </tr>
+			  <tr>
+				<th scope="row">3</th>
+				<td>Bus-004</td>
+				<td>Akash</td>
+				<td>9392143123</td>
+				<td>7 pm</td>
+			  </tr>
+			</tbody>
+		  </table>	 
+	</div>
+  </div>
+  <script>
+  function myFunction() {
+    var timer = document.querySelector('input[name = "time"]:checked').value;
+    document.getElementById("demo").innerHTML = timer;
+  }
+  </script>
+</body>
+</html>
